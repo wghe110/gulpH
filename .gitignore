@@ -1,10 +1,4 @@
-# Ignore everything in this directory
-*
+# Ignore
+node_modules
 # Except this file
-!.gitignore
-!dist
-!src
-!upload
-!gulpfile.js
-!package.json
-!README.md
+
