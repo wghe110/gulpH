@@ -34,7 +34,7 @@ gulp.task('sass', function(){
 		sass(path_sass)
 		.on('error', sass.logError)
 		.pipe(autoprefix())
-		.pipe('css/');
+		.pipe(gulp.dest('src/page/css/'));
 	})
 })
 
@@ -44,8 +44,7 @@ var del            = require('del')
 	jpegRecompress = require("imagemin-jpeg-recompress"),
 	pngquant       = require("imagemin-pngquant"),
 	minifyCss      = require('gulp-minify-css'),
-	uglify         = require('gulp-uglify'),
-	concat         = require('gulp-concat');
+	uglify         = require('gulp-uglify');
 //del
 gulp.task('delDist', function(){
 	return del(['dist/**'])
